@@ -1,3 +1,9 @@
+.main {
+    position:absolute;
+    top:25vh;
+    right:90vh;
+}
+
 .converterTemperatureCelsius {
     height:150px;
     width:300px;
@@ -41,4 +47,16 @@
     border:none !important;
     position:absolute;
     left:65px;
+}
+#convert2 {
+    position:absolute;
+    left:150px;
+}
+#convert3 {
+    position:absolute;
+    left:150px;
+}
+#convert4 {
+    position:absolute;
+    left:150px;
 }

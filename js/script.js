@@ -21,8 +21,12 @@ function toKelvin() {
 function toRankine() {
     let x = document.getElementById("degreeCelsius").value;
     const c1 = 491.67;
-    
-    let rankine = c1 + " °R";
+    const c2 = 9/5;
+    let c3 = x * c2;
+    let c4 = c3 + c1;
+    let c5 = c4.toFixed(2);
+
+    let rankine = c5 + " °R";
 
     document.getElementById("convert").innerHTML = rankine;
 }
@@ -52,10 +56,12 @@ function kToCelsius() {
 function rToCelsius() {
     let x = document.getElementById("degreeRankine").value;
     const c1 = 491.67;
-    let c2 = c1 - x;
-    let c3 = c2.toFixed(2);
+    const c2 = 5/9;
+    let c3 = x - c1;
+    let c4 = c3 * c2;
+    let c5 = c4.toFixed(2);
     
-    let celsius = c3 + "°C";
+    let celsius = c5 + "°C";
     document.getElementById("convert4").innerHTML = celsius;
 }
 

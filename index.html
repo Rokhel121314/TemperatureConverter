@@ -9,97 +9,95 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-<div class="converterTemperatureCelsius bg-warning d-flex flex-column justify-content-evenly">
-    <div class="d-flex flex-column subcontainer justify-content-center align-items-center">
-        <div class="h6">
-            <p>TEMPERATURE CONVERTER</p>
+<div class="main">
+    <div class="converterTemperatureCelsius bg-warning d-flex flex-column justify-content-evenly">
+        <div class="d-flex flex-column subcontainer justify-content-center align-items-center">
+            <div class="h6">
+                <p>TEMPERATURE CONVERTER</p>
+            </div>
+            <div>
+                <form  class="d-inline" action="" method="">  
+                    <input type="number" id="degreeCelsius" placeholder="0">
+                    <label class="clabel" for="degreeCelsius">°C =</label>
+                </form>
+                <p class="h6 d-inline answer border-bottom border-dark" id="convert"></p>
+            </div>
         </div>
-        <div>
-            <form  class="d-inline" action="" method="">  
-                <input type="number" id="degreeCelsius" placeholder="0">
-                <label class="clabel" for="degreeCelsius">°C =</label>
-            </form>
-            <p class="h6 d-inline answer" id="convert"></p>
-        </div>
-    </div>
-
-    <div class="btn-container d-flex justify-content-center">
-        <div class=" px-3">
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-success border-success" onclick="toFahrenheit()">
-                °F
-            </button>
-        </div>
-        <div class=" px-3 ">
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-danger border-danger"  onclick="toKelvin()">
-                °K
-            </button>
-        </div>
-        <div class=" px-3">
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-info border-info"  onclick="toRankine()">
-                °R
-            </button>
-        </div>
-    </div>
-</div>
-
-<!-- -----------------------------CONVERTER 2 ----------------------- -->
-<div class="converterTemperatureCelsius bg-info">
-    <div>
-
-    </div>
-    <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
-        <div class="h6 ">
-            °F to °C
-        </div>
-        <div>
-            <form  class="d-inline" action="" method="">  
-                <input type="number" id="degreeFahrenheit" placeholder="0">
-                <label for="degreeFahrenheit">°F =</label>
-            </form>
-            <p class="h6 d-inline answer" id="convert2"></p>
-        </div>
-        <div>
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="fToCelsius()">
-                    °C
-            </button>
+    
+        <div class="btn-container d-flex justify-content-center">
+            <div class=" px-3">
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-success border-success" onclick="toFahrenheit()">
+                    °F
+                </button>
+            </div>
+            <div class=" px-3 ">
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-danger border-danger"  onclick="toKelvin()">
+                    °K
+                </button>
+            </div>
+            <div class=" px-3">
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-info border-info"  onclick="toRankine()">
+                    °R
+                </button>
+            </div>
         </div>
     </div>
-    <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
-        <div class="h6 ">
-            °K to °C
+    
+    <!-- -----------------------------CONVERTER 2 ----------------------- -->
+    <div class="converterTemperatureCelsius bg-info">
+        <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
+            <div class="h6 ">
+                °F to °C
+            </div>
+            <div>
+                <form  class="d-inline" action="" method="">  
+                    <input type="number" id="degreeFahrenheit" placeholder="0">
+                    <label for="degreeFahrenheit"></label>
+                </form>
+                <p class="h6 d-inline answer border-bottom border-dark" id="convert2"></p>
+            </div>
+            <div>
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="fToCelsius()">
+                        °C
+                </button>
+            </div>
         </div>
-        <div>
-            <form  class="d-inline" action="" method="">  
-                <input type="number" id="degreeKelvin" placeholder="0">
-                <label for="degreeKelvin">°K =</label>
-            </form>
-            <p class="h6 d-inline answer" id="convert3"></p>
+        <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
+            <div class="h6 ">
+                °K to °C
+            </div>
+            <div>
+                <form  class="d-inline" action="" method="">  
+                    <input type="number" id="degreeKelvin" placeholder="0">
+                    <label for="degreeKelvin"></label>
+                </form>
+                <p class="h6 d-inline answer border-bottom border-dark" id="convert3"></p>
+            </div>
+            <div>
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="kToCelsius()">
+                        °C
+                </button>
+            </div>
         </div>
-        <div>
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="kToCelsius()">
-                    °C
-            </button>
+        <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
+            <div class="h6 ">
+                °R to °C
+            </div>
+            <div>
+                <form  class="d-inline" action="" method="">  
+                    <input type="number" id="degreeRankine" placeholder="0">
+                    <label for="degreeRankine"></label>
+                </form>
+                <p class="h6 d-inline answer border-bottom border-dark" id="convert4"></p>
+            </div>
+            <div>
+                <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="rToCelsius()">
+                        °C
+                </button>
+            </div>
         </div>
     </div>
-    <div class="fromFahrenheit d-flex justify-content-between align-items-center pt-3 px-1">
-        <div class="h6 ">
-            °R to °C
-        </div>
-        <div>
-            <form  class="d-inline" action="" method="">  
-                <input type="number" id="degreeRankine" placeholder="0">
-                <label for="degreeRankine">°R =</label>
-            </form>
-            <p class="h6 d-inline answer" id="convert4"></p>
-        </div>
-        <div>
-            <button class="btn-convert rounded-3 ps-3 pe-4 bg-warning border-warning" onclick="rToCelsius()">
-                    °C
-            </button>
-        </div>
-    </div>
-
-</div>
+</div>  
   
     
 
