@@ -40,7 +40,7 @@ function fToCelsius() {
 
     let c3 = (x - c2) * c1;
     let c4 = c3.toFixed(2);
-    let celsius = c4 + " °C";
+    let celsius = "=" + c4 + " °C";
     document.getElementById("convert2").innerHTML = celsius;
 }
 
@@ -49,7 +49,7 @@ function kToCelsius() {
     const c1 = 273.15;
     let c2 = c1 - x;
     let c3 = c2.toFixed(2);
-    let celsius = c3 + "°C";
+    let celsius = "=" + c3 + "°C";
     document.getElementById("convert3").innerHTML = celsius;
 }
 
@@ -61,7 +61,7 @@ function rToCelsius() {
     let c4 = c3 * c2;
     let c5 = c4.toFixed(2);
     
-    let celsius = c5 + "°C";
+    let celsius = "=" + c5 + "°C";
     document.getElementById("convert4").innerHTML = celsius;
 }
 
