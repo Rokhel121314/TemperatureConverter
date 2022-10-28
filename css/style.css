@@ -5,6 +5,8 @@
     border:2px solid black;
     border-radius: 15px;
     background-color:burlywood;
+    height:300;
+    width:300px;
 }
 
 .converterTemperatureCelsius {
@@ -32,21 +34,21 @@
 
 
 #degreeFahrenheit {
-    width: 50px !important;
+    width: 70px !important;
     border:none !important;
     position:absolute;
     left:65px;
 }
 
 #degreeKelvin {
-    width: 50px !important;
+    width: 70px !important;
     border:none !important;
     position:absolute;
     left:65px;
 }
 
 #degreeRankine {
-    width: 50px !important;
+    width: 70px !important;
     border:none !important;
     position:absolute;
     left:65px;

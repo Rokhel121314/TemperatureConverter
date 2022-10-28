@@ -4,16 +4,18 @@ function toFahrenheit() {
     let x = document.getElementById("degreeCelsius").value;
     const c1 = 9/5;
     const c2 = 32;
-
-    let fahrenheit = x*c1 + c2 + " °F";
+    const c3 = x * c1 + c2; 
+    const c4 = c3.toFixed(2);
+    let fahrenheit = c4 + " °F";
     document.getElementById("convert").innerHTML = fahrenheit
 }
 
 function toKelvin() {
     let x = document.getElementById("degreeCelsius").value;
     const c1 = 273.15;
-    
-    let kelvin = parseFloat(x) + c1 + " °K";
+    const c2 = parseFloat(x) + c1;
+    const c3 = c2.toFixed(2);
+    let kelvin = c3 + " °K";
 
     document.getElementById("convert").innerHTML = kelvin;
 }
