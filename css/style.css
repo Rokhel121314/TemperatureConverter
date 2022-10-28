@@ -1,0 +1,44 @@
+.converterTemperatureCelsius {
+    height:150px;
+    width:300px;
+
+}
+#degreeCelsius {
+    width:100px !important;
+    border:none !important;
+    position:absolute;
+    right: 170px;
+}
+#convert {
+    position:absolute;
+    right:62px;
+    top:46px;
+}
+
+.subcontainer {
+    position:relative;
+    
+}
+
+
+
+#degreeFahrenheit {
+    width: 50px !important;
+    border:none !important;
+    position:absolute;
+    left:65px;
+}
+
+#degreeKelvin {
+    width: 50px !important;
+    border:none !important;
+    position:absolute;
+    left:65px;
+}
+
+#degreeRankine {
+    width: 50px !important;
+    border:none !important;
+    position:absolute;
+    left:65px;
+}
